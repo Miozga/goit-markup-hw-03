@@ -22,41 +22,91 @@ ul {
 a {
   text-decoration: none;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 body {
   font-family: var(--main-font);
   color: var(--normal-text-color);
 }
-.title-h3:hover,
+.conteiner {
+  width: 1200px;
+}
+/*==================================================================
+HOVER FOCUS BUTTON
+====================================================================*/
+/*.title-h3:hover,
 .description-image:hover {
   text-decoration-line: underline;
   text-decoration-color: var(--link-color);
   text-decoration-style: solid;
-}
-img:hover {
+}*/
+img:hover img:focus {
   text-decoration-style: solid;
   border-color: var(--link-color);
 }
-
-.conteiner {
-  width: 1200px;
+.button:focus {
+  color: white;
+  background-color: var(--link-color);
 }
-.filter-container {
-  text-decoration: none;
-  padding: 94px 0 94px 0px;
-  justify-content: center;
-  padding-top: 174px; /*(174, 215, 346, 215);*/
-  padding-bottom: 346px;
-  padding-left: 215px;
-  padding-right: 215px;
+.button:focus,
+.button:hover {
+  color: white;
+  background-color: var(--link-color);
 }
-.menu-item {
+.button-container:hover {
+  border-color: var(--link-color);
+}
+a:hover,
+a:focus {
+  color: var(--link-color);
+}
+button {
+  font-family: var(--main-font);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--normal-text-color);
+  line-height: 1.62;
+  background: var(--button-color);
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
+.blue-button {
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  background: var(--link-color);
+}
+.underline-blue:hover {
+  text-decoration-line: underline;
+}
+/*============LOGO==========================================*/
+.logo {
+  position: absolute;
+  left: 215px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.46;
+  letter-spacing: 0.03em;
+  color: var(--link-color);
+}
+.studio {
+  font-family: var(--secondary-font);
+  color: var(--color-black);
+}
+.studio-footer {
+  font-family: var(--secondary-font);
+  color: var(--color-white);
+}
+/*===================================================
+NAGŁÓWEK
+========================================================*/
 .nav-bar {
   height: 80px;
   width: 1600px;
@@ -81,79 +131,16 @@ img:hover {
   font-size: 14px;
   justify-content: space-around;
 }
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
-  width: 572px;
-  height: 54px;
-  left: 510px;
-  top: 174px;
-  padding-bottom: 34px;
-}
-.image-box-container {
-  width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
-  gap: 30px;
-}
-.item {
-  margin: 0;
-  padding: 0;
-  width: auto;
-  border-bottom: 1px solid #eeeeee;
-}
-.contacts-position {
-  padding-left: 372px;
-  gap: 51px;
-}
 .social-links-position {
   padding-left: 91px;
 }
-
-.logo {
-  position: absolute;
-  left: 215px;
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.46;
-  letter-spacing: 0.03em;
-  color: var(--link-color);
+.menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--normal-text-color);
 }
-.studio {
-  font-family: var(--secondary-font);
-  color: var(--color-black);
-}
-.studio-footer {
-  font-family: var(--secondary-font);
-  color: var(--color-white);
-}
-.contact-footer {
-  position: absolute;
-  width: 247px;
-  height: 84px;
-  left: 215px;
-}
-.slogan {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-white);
-  padding-top: 200px;
-  padding-bottom: 30px;
-}
-.our-team {
-  background-color: var(--button-color);
-}
-
 .contact-info {
   font-style: normal;
   font-weight: 500;
@@ -162,48 +149,13 @@ img:hover {
   letter-spacing: 0.02em;
   color: var(--paragraph-text-color);
 }
-.contact-footer {
-  width: 247px;
-  height: 81px;
+.contacts-position {
+  padding-left: 372px;
+  gap: 51px;
 }
-.contact-info-footer {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-button {
-  font-family: var(--main-font);
-  font-weight: 500;
-  line-height: 1.62;
-  background: var(--button-color);
-  letter-spacing: 0.03em;
-  cursor: pointer;
-}
-.blue-button {
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--color-white);
-  background: var(--link-color);
-}
-.button:focus {
-  color: white;
-  background-color: var(--link-color);
-}
-.button:hover {
-  text-decoration-line: underline;
-  text-decoration-color: var(--link-color);
-  text-decoration-style: solid;
-}
-
-a:hover,
-a:focus {
-  color: var(--link-color);
-}
-.section {
-  padding: 94px 0 94px 0px;
-}
+/*=======================================================
+PORTFOLIO-------------INDEX
+=========================================================*/
 
 .main-section {
   background-color: var(--secondary-background-color);
@@ -242,16 +194,7 @@ a:focus {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.title-h3 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  margin: 0;
-  padding-top: 20px;
-  padding-left: 24px;
-  color: var(--normal-text-color);
-}
+
 .name {
   font-weight: 500;
   line-height: 1.19;
@@ -263,6 +206,67 @@ a:focus {
   letter-spacing: 0.03em;
   color: var(--color-grey);
 }
+.section {
+  padding: 94px 0 94px 0px;
+}
+.our-team {
+  background-color: var(--button-color);
+}
+.slogan {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  padding-top: 200px;
+  padding-bottom: 30px;
+}
+.filter-container {
+  text-decoration: none;
+  padding: 94px 0 94px 0px;
+  justify-content: center;
+  padding-top: 174px; /*(174, 215, 346, 215);*/
+  padding-bottom: 346px;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+  width: 572px;
+  height: 54px;
+  left: 510px;
+  top: 174px;
+  padding-bottom: 34px;
+}
+.image-box-container {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  gap: 30px;
+}
+.item {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  border-bottom: 1px solid #eeeeee;
+}
+.title-h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 24px;
+  color: var(--normal-text-color);
+}
 .description-image {
   color: var(--color-grey);
   line-height: 1.875;
@@ -271,6 +275,33 @@ a:focus {
   padding-left: 24px;
   padding-bottom: 20px;
   letter-spacing: 0.03em;
+}
+
+/*=================================================
+footer
+==================================================*/
+.footer {
+  background-color: var(--color-dark-grey);
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 1628px;
+  height: 252px;
+  border-radius: 0px;
+}
+.contact-footer {
+  position: absolute;
+  width: 247px;
+  height: 84px;
+  left: 215px;
+}
+
+.contact-info-footer {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .street {
   position: absolute;
@@ -283,14 +314,4 @@ a:focus {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-.footer {
-  background-color: var(--color-dark-grey);
-  position: absolute;
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 1628px;
-  height: 252px;
-  border-radius: 0px;
 }
