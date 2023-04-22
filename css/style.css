@@ -27,8 +27,98 @@ body {
   font-family: var(--main-font);
   color: var(--normal-text-color);
 }
+.title-h3:hover,
+.description-image:hover {
+  text-decoration-line: underline;
+  text-decoration-color: var(--link-color);
+  text-decoration-style: solid;
+}
+img:hover {
+  text-decoration-style: solid;
+  border-color: var(--link-color);
+}
+
+.conteiner {
+  width: 1200px;
+}
+.filter-container {
+  text-decoration: none;
+  padding: 94px 0 94px 0px;
+  justify-content: center;
+  padding-top: 174px; /*(174, 215, 346, 215);*/
+  padding-bottom: 346px;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+.menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--normal-text-color);
+}
+.nav-bar {
+  height: 80px;
+  width: 1600px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.nav-items {
+  gap: 47px;
+  width: 261px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+  display: flex;
+  color: var(--normal-text-color);
+  font-size: 14px;
+  justify-content: space-around;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+  width: 572px;
+  height: 54px;
+  left: 510px;
+  top: 174px;
+  padding-bottom: 34px;
+}
+.image-box-container {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  gap: 30px;
+}
+.item {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  border-bottom: 1px solid #eeeeee;
+}
+.contacts-position {
+  padding-left: 372px;
+  gap: 51px;
+}
+.social-links-position {
+  padding-left: 91px;
+}
 
 .logo {
+  position: absolute;
+  left: 215px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -44,6 +134,12 @@ body {
   font-family: var(--secondary-font);
   color: var(--color-white);
 }
+.contact-footer {
+  position: absolute;
+  width: 247px;
+  height: 84px;
+  left: 215px;
+}
 .slogan {
   font-weight: 900;
   font-size: 44px;
@@ -51,10 +147,13 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 .our-team {
   background-color: var(--button-color);
 }
+
 .contact-info {
   font-style: normal;
   font-weight: 500;
@@ -62,6 +161,10 @@ body {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--paragraph-text-color);
+}
+.contact-footer {
+  width: 247px;
+  height: 81px;
 }
 .contact-info-footer {
   font-size: 14px;
@@ -84,23 +187,41 @@ button {
   color: var(--color-white);
   background: var(--link-color);
 }
-.button:focus,
-.button:hover {
+.button:focus {
   color: white;
   background-color: var(--link-color);
 }
+.button:hover {
+  text-decoration-line: underline;
+  text-decoration-color: var(--link-color);
+  text-decoration-style: solid;
+}
+
 a:hover,
 a:focus {
   color: var(--link-color);
 }
+.section {
+  padding: 94px 0 94px 0px;
+}
+
 .main-section {
   background-color: var(--secondary-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.menu-item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+.paragraphs {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .paragraphs-title {
   font-weight: 700;
@@ -113,6 +234,7 @@ a:focus {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--paragraph-text-color);
+  padding-top: 10px;
 }
 .section-title {
   font-weight: 700;
@@ -125,6 +247,10 @@ a:focus {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 24px;
+  color: var(--normal-text-color);
 }
 .name {
   font-weight: 500;
@@ -141,8 +267,16 @@ a:focus {
   color: var(--color-grey);
   line-height: 1.875;
   letter-spacing: 0.03em;
+  margin: 0;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  letter-spacing: 0.03em;
 }
 .street {
+  position: absolute;
+  width: 247px;
+  height: 21px;
+  left: 215px;
   font-style: normal;
   font-family: var(--main-font);
   color: var(--color-white);
@@ -152,4 +286,11 @@ a:focus {
 }
 .footer {
   background-color: var(--color-dark-grey);
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 1628px;
+  height: 252px;
+  border-radius: 0px;
 }

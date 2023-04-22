@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Website about WebStudio" />
     <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,90 +21,124 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="nav-bar">
+      <div class="menu-items">
         <a class="logo" href="index.html">Web<span class="studio">Studio</span></a>
-        <ul>
-          <li><a class="menu-item" href="./index.html">Agency</a></li>
-          <li><a class="menu-item" href="portfolio.html">Portfolio</a></li>
-          <li><a class="menu-item">Contact</a></li>
-        </ul>
+      </div>
+      <nav class="menu-items social-links-position">
+        <div>
+          <ul class="nav-items">
+            <li><a class="menu-item" href="./index.html">Agency</a></li>
+            <li><a class="menu-item" href="portfolio.html">Portfolio</a></li>
+            <li><a class="menu-item">Contact</a></li>
+          </ul>
+        </div>
       </nav>
-      <ul>
-        <li><a class="contact-info" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <ul class="menu-items contacts-position">
+        <li>
+          <a class="contact-info" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
         <li><a class="contact-info" href="tel:+48111111111">+48 111 111 111</a></li>
       </ul>
     </header>
-    <main>
-      <section>
-        <ul>
-          <li><button class="button">Wszsytkie</button></li>
-          <li><button class="button">Strony</button></li>
-          <li><button class="button">Aplikacje</button></li>
-          <li><button class="button">Dizajn</button></li>
-          <li><button class="button">Marketing</button></li>
-        </ul>
-        <ul>
-          <li>
-            <img src="./images/laptop.jpg" alt="laptop" />
 
-            <h3 class="title-h3">Technocrack</h3>
-            <p class="description-image">Strona internetowa</p>
+    <section class="filter-container">
+      <div class="container">
+        <ul class="button-container">
+          <li><button type="button" class="button">Wszsytkie</button></li>
+          <li><button type="button" class="button">Strony</button></li>
+          <li><button type="button" class="button">Aplikacje</button></li>
+          <li><button type="button" class="button">Dizajn</button></li>
+          <li><button type="button" class="button">Marketing</button></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="image-box-container">
+          <li class="item">
+            <figure>
+              <img src="./images/laptop.jpg" alt="laptop" />
+              <h3 class="title-h3">Technocrack</h3>
+              <p class="description-image">Strona internetowa</p>
+            </figure>
           </li>
-          <li>
-            <img src="./images/players.jpg" alt="two players play basketball " />
-            <h3 class="title-h3">Grafika New Orlean vs Golden Star</h3>
-            <p class="description-image">Dizajn</p>
+          <li class="item">
+            <figure>
+              <img src="./images/players.jpg" alt="two players play basketball " />
+              <h3 class="title-h3">Grafika New Orlean vs Golden Star</h3>
+              <p class="description-image">Dizajn</p>
+            </figure>
           </li>
-          <li>
-            <img src="./images/seafood.jpg" alt="logo sea food restaurant" />
-            <h3>Restauracja Seafood</h3>
-            <p class="description-image">Aplikacja</p>
+          <li class="item">
+            <figure>
+              <img src="./images/seafood.jpg" alt="logo sea food restaurant" />
+              <h3 class="title-h3">Restauracja Seafood</h3>
+              <p class="description-image">Aplikacja</p>
+            </figure>
           </li>
-          <li>
-            <img src="./images/headphones.jpg" alt="black headphones" />
-            <h3 class="title-h3">Projekt Prime</h3>
-            <p class="description-image">Marketing</p>
+          <li class="item">
+            <figure>
+              <img src="./images/headphones.jpg" alt="black headphones" />
+              <h3 class="title-h3">Projekt Prime</h3>
+              <p class="description-image">Marketing</p>
+            </figure>
           </li>
-          <li>
-            <img src="./images/twoboxes.jpg" alt="two difrent boxes" />
-            <h3 class="title-h3">Projekt Boxes</h3>
-            <p class="description-image">Aplikacja</p>
+          <li class="item">
+            <figure>
+              <img src="./images/twoboxes.jpg" alt="two difrent boxes" />
+              <h3 class="title-h3">Projekt Boxes</h3>
+              <p class="description-image">Aplikacja</p>
+            </figure>
           </li>
-          <li>
-            <img src="./images/monitor.jpg" alt="computer monitor" />
-            <h3 class="title-h3">Inspiration has no Borders</h3>
-            <p class="description-image">Strona internetowa</p>
+          <li class="item">
+            <figure>
+              <img src="./images/monitor.jpg" alt="computer monitor" />
+              <h3 class="title-h3">Inspiration has no Borders</h3>
+              <p class="description-image">Strona internetowa</p>
+            </figure>
           </li>
-          <li>
-            <img src="./images/book.jpg" alt="open newspeper" />
-            <h3 class="title-h3">Magazyn Limited Edition</h3>
-            <p class="description-image">Dizajn</p>
+          <li class="item">
+            <figure>
+              <img src="./images/book.jpg" alt="open newspeper" />
+              <h3 class="title-h3">Magazyn Limited Edition</h3>
+              <p class="description-image">Dizajn</p>
+            </figure>
           </li>
-          <li>
-            <img src="./images/pendant.jpg" alt="lab pendant" />
-            <h3 class="title-h3">Projekt LAB</h3>
-            <p class="description-image">Marketing</p>
+          <li class="item">
+            <figure>
+              <img src="./images/pendant.jpg" alt="lab pendant" />
+              <h3 class="title-h3">Projekt LAB</h3>
+              <p class="description-image">Marketing</p>
+            </figure>
           </li>
-          <li>
-            <img src="./images/laptop2.jpg" alt="whos writting on open laptop" />
-            <h3 class="title-h3">Growing Business</h3>
-            <p class="description-image">Aplikacja</p>
+          <li class="item">
+            <figure>
+              <img src="./images/laptop2.jpg" alt="whos writting on open laptop" />
+              <h3 class="title-h3">Growing Business</h3>
+              <p class="description-image">Aplikacja</p>
+            </figure>
           </li>
         </ul>
-      </section>
-    </main>
-    <footer class="footer">
-      <a class="logo" href="index.html">Web<span class="studio-footer">Studio</span></a>
-      <address class="adress">
-        <ul>
-          <li class="street">m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="contact-info-footer">info@devstudio.com</a>
-          </li>
-          <li><a href="tel:+48111111111" class="contact-info-footer">+48 111 111 111</a></li>
-        </ul>
-      </address>
-    </footer>
+      </div>
+    </section>
+    <div class="footer container">
+      <footer>
+        <div>
+          <a class="logo" href="index.html">Web<span class="studio-footer">Studio</span></a>
+        </div>
+        <address>
+          <div class="contact-footer">
+            <ul>
+              <li class="street">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li>
+                <a class="contact-info-footer" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li><a class="contact-info-footer" href="tel:+48111111111">+48 111 111 111</a></li>
+            </ul>
+          </div>
+        </address>
+      </footer>
+    </div>
   </body>
 </html>
