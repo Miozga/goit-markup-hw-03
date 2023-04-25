@@ -22,6 +22,9 @@ ul {
 a {
   text-decoration: none;
 }
+* {
+  margin: 0;
+}
 h1,
 h2,
 h3,
@@ -37,6 +40,7 @@ body {
 }
 .conteiner {
   width: 1200px;
+  margin: 0 auto;
 }
 /*==================================================================
 HOVER FOCUS BUTTON
@@ -87,7 +91,6 @@ button {
 }
 /*============LOGO==========================================*/
 .logo {
-  position: absolute;
   left: 215px;
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -108,7 +111,6 @@ button {
 NAGŁÓWEK
 ========================================================*/
 .nav-bar {
-  height: 80px;
   width: 1600px;
   left: 0px;
   top: 0px;
@@ -122,8 +124,6 @@ NAGŁÓWEK
 }
 .nav-items {
   gap: 47px;
-  width: 261px;
-  height: 16px;
   left: 453px;
   top: 32px;
   display: flex;
@@ -163,6 +163,18 @@ PORTFOLIO-------------INDEX
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
+}
+.slogan {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white);
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 .menu-items {
   display: flex;
@@ -174,6 +186,14 @@ PORTFOLIO-------------INDEX
   gap: 30px;
   padding-left: 15px;
   padding-right: 15px;
+  left: 215px;
+  top: 774px;
+}
+.section-what-we-do {
+  width: 1170px;
+  left: 215px;
+  top: 969px;
+  border-radius: 0px;
 }
 .paragraphs-title {
   font-weight: 700;
@@ -189,19 +209,46 @@ PORTFOLIO-------------INDEX
   padding-top: 10px;
 }
 .section-title {
+  display: flex;
+  justify-content: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-
+.pics-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  left: 215px;
+  top: 969px;
+  border-radius: 0px;
+}
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.team-container {
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-black);
+}
+.pic-item {
+  padding: 5px;
+}
 .name {
+  display: flex;
+  justify-content: center;
   font-weight: 500;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-black);
 }
 .describe-name {
+  display: flex;
+  justify-content: center;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-grey);
@@ -212,16 +259,7 @@ PORTFOLIO-------------INDEX
 .our-team {
   background-color: var(--button-color);
 }
-.slogan {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-white);
-  padding-top: 200px;
-  padding-bottom: 30px;
-}
+
 .filter-container {
   text-decoration: none;
   padding: 94px 0 94px 0px;
@@ -236,8 +274,6 @@ PORTFOLIO-------------INDEX
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
-  width: 572px;
-  height: 54px;
   left: 510px;
   top: 174px;
   padding-bottom: 34px;
@@ -254,7 +290,6 @@ PORTFOLIO-------------INDEX
 .item {
   margin: 0;
   padding: 0;
-  width: auto;
   border-bottom: 1px solid #eeeeee;
 }
 .title-h3 {
@@ -282,18 +317,13 @@ footer
 ==================================================*/
 .footer {
   background-color: var(--color-dark-grey);
-  position: absolute;
   width: 1600px;
   height: 252px;
   left: 0px;
   top: 1628px;
-  height: 252px;
   border-radius: 0px;
 }
 .contact-footer {
-  position: absolute;
-  width: 247px;
-  height: 84px;
   left: 215px;
 }
 
@@ -304,9 +334,6 @@ footer
   color: rgba(255, 255, 255, 0.6);
 }
 .street {
-  position: absolute;
-  width: 247px;
-  height: 21px;
   left: 215px;
   font-style: normal;
   font-family: var(--main-font);
