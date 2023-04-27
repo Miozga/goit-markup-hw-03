@@ -60,6 +60,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--color-white);
   background: var(--link-color);
+  border: 0px;
 }
 .main-section {
   background-color: var(--secondary-background-color);
@@ -120,6 +121,7 @@ body {
 .describe-name {
   font-size: 16px;
   padding-top: 10px;
+  padding-bottom: 30px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-grey);
