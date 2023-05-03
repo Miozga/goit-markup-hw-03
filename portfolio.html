@@ -14,40 +14,35 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- <section class="section"> -->
-    <header class="nav-bar">
+    <div class="container">
+     <header class="nav-bar"> 
       <div class="menu-logo">
         <a class="logo" href="index.html">Web<span class="studio">Studio</span></a>
       </div>
-
-      <nav>
-        <div>
+     <nav class="nav">
           <ul class="nav-items">
             <li><a class="menu-item" href="./index.html">Agency</a></li>
             <li><a class="menu-item" href="./portfolio.html">Portfolio</a></li>
             <li><a class="menu-item">Contact</a></li>
           </ul>
-        </div>
-      </nav>
-      <div>
-        <ul class="nav-items-second">
+       <ul class="nav-items-second">
           <li>
             <a class="contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li><a class="contact-tel" href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
-      </div>
+       </nav>
     </header>
-    <!-- </section> -->
+  </div>
+         <div class="container"> 
     <main>
-      <section class="section">
-        <div class="container portfolio">
+ <section class="section, portfolio">
           <ul class="button-container">
-            <li><button class="button">Wszsytkie</button></li>
-            <li><button class="button">Strony</button></li>
-            <li><button class="button">Aplikacje</button></li>
-            <li><button class="button">Dizajn</button></li>
-            <li><button class="button">Marketing</button></li>
+            <li><button class="button" type="button">Wszsytkie</button></li>
+            <li><button class="button" type="button">Strony</button></li>
+            <li><button class="button" type="button">Aplikacje</button></li>
+            <li><button class="button" type="button">Dizajn</button></li>
+            <li><button class="button" type="button">Marketing</button></li>
           </ul>
           <ul class="portfolio-container">
             <li class="box-portfolio">
@@ -97,12 +92,15 @@
               <p class="description-image">Aplikacja</p>
             </li>
           </ul>
-        </div>
-      </section>
+   </section>
     </main>
-    <footer class="footer">
-      <a class="logo logo-footer" href="index.html">Web<span class="studio-footer">Studio</span></a>
-      <address>
+  </div>
+  <div class="container">
+    <footer class="footer"><ul>
+      <li><a class="logo logo-footer" href="index.html">Web<span class="studio-footer">Studio</span></a>
+      </li>
+      <address >
+</ul>
         <ul class="adress">
           <li class="street">m. Warszawa, Aleje Jerozolimskie 21</li>
           <li>
@@ -112,5 +110,6 @@
         </ul>
       </address>
     </footer>
+  </div>
   </body>
 </html>
