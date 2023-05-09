@@ -119,6 +119,7 @@ header {
 }
 .lorem {
   padding-bottom: 0;
+  line-height: 1.14;
 }
 .paragraphs-container {
   gap: 30px;
@@ -213,6 +214,7 @@ header {
 }
 .portfolio-container {
   display: flex;
+  justify-content: space-between;
   gap: 30px;
   flex-wrap: wrap;
 }
@@ -259,6 +261,7 @@ header {
 .street {
   font-family: var(--main-font);
   color: var(--color-white);
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -266,6 +269,7 @@ header {
 }
 .contact-info-footer {
   font-size: 14px;
+  font-style: normal;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
