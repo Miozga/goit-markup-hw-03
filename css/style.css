@@ -11,8 +11,6 @@
   --paragraph-text-color: #757575;
   --link-color: #2196f3;
   --secondary-background-color: #2f303a;
-  --button-color: #f5f4fa;
-  --border-color: #ececec;
 }
 * {
   margin: 0;
@@ -41,7 +39,7 @@ body {
 }
 /* ============================================HEADER=========== */
 header {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #ececec;
 }
 .container-header {
   display: flex;
