@@ -114,6 +114,7 @@ header {
   background-color: var(--link-color);
   padding: 10px 40px;
   margin: 50px 0 104px;
+  border-radius: 4px;
 }
 .lorem {
   padding-bottom: 0;
